@@ -37,6 +37,8 @@ int _printf(const char *format, ...)
 			format++;
 			switch (*format)
 			{
+				case '\0':
+					return (-1);
 				case 'c':
 					count += _putchar(va_arg(args, int));
 						break;
