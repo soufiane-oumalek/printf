@@ -9,6 +9,9 @@
 int _puts(char *str);
 int _printf(const char *format, ...);
 int _putchar(char c);
+int print_string(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+
 
 /* Functions to print numbers */
 
